@@ -1,0 +1,19 @@
+{
+    "appKeys": {},
+    "capabilities": [
+        ""
+    ],
+    "companyName": "justinjmkim@gmail.com",
+    "longName": "handkey",
+    "projectType": "native",
+    "resources": {
+        "media": []
+    },
+    "shortName": "handkey",
+    "uuid": "0611051d-357a-4ff1-8693-e3c29bc81200",
+    "versionCode": 1,
+    "versionLabel": "1.0",
+    "watchapp": {
+        "watchface": false
+    }
+}
