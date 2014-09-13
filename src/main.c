@@ -1,9 +1,11 @@
 #include <pebble.h>
   
 static Window *s_main_window;
-static TextLayer *s_first_page_layer
-                , *s_enter_password_layer
-                , *s_set_password_layer;
+
+//textlayers
+static TextLayer *s_first_page_layer;
+static TextLayer *s_enter_password_layer;
+static TextLayer *s_set_password_layer;
   
 static void set_first_page_colors() {
   text_layer_set_background_color(s_first_page_layer, GColorClear);
@@ -23,25 +25,25 @@ static void create_set_password() {
 }
 
 static void create_first_page() {
-  set_first_page_colors();
-  create_enter_password();
-  create_set_password();
+  //set_first_page_colors();
+  //create_enter_password();
+  //create_set_password();
 }
 
 static void main_window_load(Window *window) {
   // Create first_page TextLayer
   create_first_page();
   
-  layer_add_child(window_get_root_layer(window), text_layer_get_layer(s_first_page_layer));
-  layer_add_child(window_get_root_layer(window), text_layer_get_layer(s_enter_password_layer));
-  layer_add_child(window_get_root_layer(window), text_layer_get_layer(s_set_password_layer));
+  //layer_add_child(window_get_root_layer(window), text_layer_get_layer(s_first_page_layer));
+  //layer_add_child(window_get_root_layer(window), text_layer_get_layer(s_enter_password_layer));
+  //layer_add_child(window_get_root_layer(window), text_layer_get_layer(s_set_password_layer));
 }
 
 static void main_window_unload(Window *window) {
   // Destroy first page
-  text_layer_destroy(s_first_page_layer);
-  text_layer_destroy(s_enter_password_layer);
-  text_layer_destroy(s_set_password_layer);
+  //text_layer_destroy(s_first_page_layer);
+  //text_layer_destroy(s_enter_password_layer);
+  //text_layer_destroy(s_set_password_layer);
 }
 
 static void init() {
