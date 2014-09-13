@@ -1,12 +1,12 @@
 #include <pebble.h>
   
-static window *s_main_window;
+static Window *s_main_window;
   
-static void main_window_load(window *window) {
+static void main_window_load(Window *window) {
   
 }
 
-static void main_window_unload(window *window) {
+static void main_window_unload(Window *window) {
   
 }
 
